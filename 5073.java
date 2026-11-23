@@ -55,42 +55,42 @@ class Main {
 
 
 //최적 풀이
-import java.io.*;
-import java.util.*;
+// import java.io.*;
+// import java.util.*;
 
-class Main {
-    public static void main(String[] args) throws IOException {
-        BufferedReader br = new BufferedReader(
-            new InputStreamReader(System.in)
-        );
+// class Main {
+//     public static void main(String[] args) throws IOException {
+//         BufferedReader br = new BufferedReader(
+//             new InputStreamReader(System.in)
+//         );
 
-        StringBuilder sb = new StringBuilder();
-        String input;
+//         StringBuilder sb = new StringBuilder();
+//         String input;
 
-        while ((input = br.readLine()) != null) {
-            StringTokenizer st = new StringTokenizer(input);
+//         while ((input = br.readLine()) != null) {
+//             StringTokenizer st = new StringTokenizer(input);
 
-            int a = Integer.parseInt(st.nextToken());
-            int b = Integer.parseInt(st.nextToken());
-            int c = Integer.parseInt(st.nextToken());
+//             int a = Integer.parseInt(st.nextToken());
+//             int b = Integer.parseInt(st.nextToken());
+//             int c = Integer.parseInt(st.nextToken());
 
-            if (a == 0 && b == 0 && c == 0) {
-                break;
-            }
+//             if (a == 0 && b == 0 && c == 0) {
+//                 break;
+//             }
 
-            int max = Math.max(a, Math.max(b, c));
+//             int max = Math.max(a, Math.max(b, c));
 
-            if (a + b + c - max <= max) {
-                sb.append("Invalid\n");
-            } else if (a == b && b == c) {
-                sb.append("Equilateral\n");
-            } else if (a == b || b == c || a == c) {
-                sb.append("Isosceles\n");
-            } else {
-                sb.append("Scalene\n");
-            }
-        }
+//             if (a + b + c - max <= max) {
+//                 sb.append("Invalid\n");
+//             } else if (a == b && b == c) {
+//                 sb.append("Equilateral\n");
+//             } else if (a == b || b == c || a == c) {
+//                 sb.append("Isosceles\n");
+//             } else {
+//                 sb.append("Scalene\n");
+//             }
+//         }
 
-        System.out.print(sb);
-    }
-}
+//         System.out.print(sb);
+//     }
+// }
